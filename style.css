@@ -1,0 +1,448 @@
+body {
+    background-color: rgb(0, 0, 0)!important;
+}
+  
+.btn__admin {
+  color:white;
+  text-decoration:none;
+}
+  
+  .primary__text{
+    font-family: 'Bebas Neue', sans-serif;
+    color:white;
+  }
+  
+  .secondary__text{
+    font-family: 'Oswald', sans-serif;
+    color:white!important;
+    font-size:1.5rem;
+  }
+
+  .dorm_primary__text{
+    font-family: 'Bebas Neue', sans-serif;
+    color:white;
+    font-size:24px;
+  }
+
+  .dorm__primary__text{
+    font-family: 'Bebas Neue', sans-serif;
+    color:white;
+    font-size:20px;
+  }
+  
+  .dorm_secondary__text{
+    font-family: 'Rubik', sans-serif;
+    color:white!important;
+    font-size:17px;
+  }
+
+  .card {
+    width: 80%; /* Set your desired width here, for example, 80% of the container */
+    max-width: 900px; /* You can set a maximum width if needed */
+    height: auto; /* Let the height adjust according to the content */
+    margin: 0 auto; /* Center the card horizontally */
+    
+  }
+  
+  
+  
+  .vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
+  }
+  
+  .count {
+    font-family: 'Bebas Neue', sans-serif;
+    color:white;
+    font-size: 4rem;
+  }
+
+  .counting {
+    margin-left: 3.5%!important;
+  }
+
+
+
+  span {
+    padding:10px;
+    color:white;
+  }
+
+  /* for gallery effects */
+  .swiper-container {
+    width: 100%;
+    height: 90%;
+
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-general {
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 1400px;
+  }
+  
+  .container-general .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .container-general .gallery-wrap .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease;
+  }
+  
+  .container-general .gallery-wrap .item:hover {
+    flex: 7;
+  }
+  
+  /* Image Accordions Effect 1 */
+  .wrap-effect-1 .item:first-of-type {
+    background-image: url('img/h1.avif');
+  }
+  
+  .wrap-effect-1 .item:nth-of-type(2) {
+    background-image: url('img/h5.avif');
+  }
+  
+  .wrap-effect-1 .item:nth-of-type(3) {
+    background-image: url('img/h2.jpg');
+  }
+  
+  .wrap-effect-1 .item:nth-of-type(4) {
+    background-image: url('img/h2.avif');
+  }
+  
+  .wrap-effect-1 .item:last-of-type {
+    background-image: url('img/h7.avif');
+  }
+  
+
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(10deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-10deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(5deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+
+  
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/h2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+  .logo{
+    cursor: pointer;
+    width:220px!important;
+  }
+  
+  navbar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left:10%;
+    top:0%;
+    position: absolute;
+  }
+  
+
+
+
+  /* button effects */
+  .custom-btn {
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+
+  }
+  
+  .btn__effects {
+    width: 130px;
+    height: 48px;
+    line-height: auto;
+    padding: 0;
+    border: none;
+  }
+  .btn__effects span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn__effects:before,
+  .btn__effects:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  .btn__effects:before {
+    height: 50%;
+    width: 2px;
+  }
+  .btn__effects:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn__effects:hover:before {
+    height: 100%;
+  }
+  .btn__effects:hover:after {
+    width: 100%;
+  }
+  .btn__effects span:before,
+  .btn__effects span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  .btn__effects span:before {
+    width: 2px;
+    height: 50%;
+  }
+  .btn__effects span:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn__effects span:hover:before {
+    height: 100%;
+  }
+  .btn__effects span:hover:after {
+    width: 100%;
+    
+  }
+
+  .content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+  }
+  
+  .hero__text {
+    font-size: 4.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .side-bar {
+    width: 80px;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(56, 56, 56));
+	  backdrop-filter: blur(5px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    position: fixed;
+  }
+  
+  .menu {
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+  }
+  
+  .social-links img {
+    width: 40px;
+    margin: 5px;
+    margin-left: 19px;
+    cursor: pointer;
+  }
+
+
+  
+  .social-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+  .profile-link {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    transform: translateY(-50%);
+  }
+
+  .fa-solid.fa-user {
+    border: 1px solid rgb(255, 255, 255); /* You can change the color and border width as needed */
+    border-radius: 50%;
+    padding:12px;
+    color:white;
+    font-size: 17px;;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    left:20px;
+    transform: translateY(-50%);
+  }
+  
+  /*footer*/
+  
+
+  .bg-footer {
+    background-color: #0f0f0f;
+    padding: 100px 0 50px;
+}
+
+.footer__text {
+  font-family: 'Bebas Neue', sans-serif;
+  color:white;
+  font-size: 22px;
+}
+
+
+/* ========================== */
+
+
+.close_btn{
+    color:black;
+    font-size: 40px;
+    position:absolute;
+    top:29%;
+    left:76%;
+}
+
+.mcd {
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+    background-color:transparent!important;
+}
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+ }
+ 
+ .form-container form{
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+ }
+ 
+ .form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+ }
+ 
+ .form-container form input,
+ .form-container form select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background: #eee;
+    border-radius: 5px;
+ }
+ 
+ .form-container form select option{
+    background: #fff;
+ }
+ 
+ .form-container form .form-btn{
+    background: #000000;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .form-container form .form-btn:hover{
+    background: rgb(41, 41, 41);
+    color:#fff;
+ }
+ 
+ .form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color:#333;
+ }
+ 
+ .form-container form p a{
+    color:crimson;
+ }
+ 
+ .form-container form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
